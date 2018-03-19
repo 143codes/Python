@@ -1,0 +1,229 @@
+I
+print('Rado')
+
+II
+name = input('Your name: ')
+print ('Hello, ', name)
+
+III
+num1 = float(input('Enter num 1: '))
+num2 = float(input('Enter num 2: '))
+a = num1 + num2
+b = num1 - num2
+c = num1 * num2
+d = num1 / num2
+e = num1 % num2
+f = num1 ** num2
+g = num2 ** num1
+print ("Събиране", a)
+print ('Изваждане', b)
+print ('Умножение', c)
+print ('Делене', d)
+print ('Остатък', e)
+print ('Степенуван num1', f)
+print ('Степенуван num2', g)
+
+IV
+age = float(input('Enter your age:'))
+
+if age < 18:
+    print('Непълнолетен')
+else:
+print ('Пълнолетен')
+
+V
+day = input('Énter day: ')
+if day == '1' :
+    print ('Понеделник')
+elif day == '2':
+    print ('Вторник')
+elif day == '3':
+    print ('Сряда')
+elif day == '4':
+    print ('Четвъртък')
+elif day == '5':
+    print ('Петък')
+elif day == '6':
+    print ('Събота')
+elif day == '7':
+print ('Неделя')
+
+VI
+month = input("Enter month: ")
+if month == '1' :
+    print ('Януари')
+elif month == '2' :
+    print ('Февруари')
+elif month == '3' :
+    print ('Март')
+elif month == '4':
+    print('Април')
+elif month == '5' :
+    print ('Май')
+elif month == '6' :
+    print ('Юни')
+elif month == '7' :
+    print ('Юли')
+elif month == '8' :
+    print ('Август')
+elif month == '9' :
+    print ('Септември')
+elif month == '10' :
+    print ('Октомври')
+elif month == '11' :
+    print ('Ноември')
+elif month == '12' :
+print ('Декември')
+
+VII
+print ("------------------------")
+print ('For')
+print ("------------------------")
+#a
+for a in range (0, 21, 1):
+    print(a)
+
+print ("------------------------")
+#b
+for b in range (0, 101, 5):
+    print(b)
+print ("------------------------")
+#c
+for c in range (-101, 101, 10):
+    print(c)
+print ("------------------------")
+#d
+for d in range (1000, 0, -100):
+    print(d)
+print ("------------------------")
+#e
+for e in range (500, 100, -20):
+    print(e)
+print ("------------------------")
+#f
+for f in range (200, 701, 100):
+    print(f)
+print ("------------------------")
+print('While')
+print ("------------------------")
+#a
+n = 0
+while n <21:
+    print(n)
+    n = n+1
+print ("------------------------")
+#b
+n = 0
+while n <101:
+    print(n)
+    n = n+5
+print ("------------------------")
+#c
+n = -100
+while n <101:
+    print(n)
+    n = n+10
+print ("------------------------")
+#d
+n = 1000
+while n < 0:
+    print(n)
+n = n-100
+print ("------------------------")
+#e
+n = 500
+while n <100:
+    print(n)
+    n = n-20
+print ("------------------------")
+#f
+n = 200
+while n <701:
+    print(n)
+    n = n+100
+print ("------------------------")
+print ("------------------------")
+
+VIII
+def avg_nums(grades):
+    sum = 0
+    for n in grades:
+        sum = sum + n
+    avg = sum / len (grades)
+    return sum
+grades = [6, 5.5, 3 ,5, 6, 4.2, 4]
+grades[2] = 4.5;
+grades.insert(7, 4)
+print ('Оценки: ', grades)
+grades.sort()
+print ('Във възходящ ред: ', grades)
+grades.reverse()
+print ('В низходящт ред: ', grades)
+d = avg_nums(grades)
+print ('Средно аритметично: ', d)
+
+IX
+robo: {"Pesho", 'Stavri', 'Nicol', 'Kalinka', 'Asen'}
+music: ('Stefka', 'Stavri', 'Vasko', 'Kleopatra', 'Asen', 'Milen')
+print cmp(robo, music)
+
+X
+tel = {"Pesho": "1234", "Vera": "4567", "Misho":"24364"}
+tel['Malinka'] = '75346'
+del(tel['Pesho'])
+print(tel)
+
+XI
+def add_nums (a, b):
+    return a + b
+p = add_nums (10, 15)
+print (p)
+
+'''def add_nums (a, b):
+    return a + b
+p = add_nums (a, b)
+print (p)
+a = int(input('Enter num 1: '))
+b= int(input('Enter num 2: '))'''
+
+XII
+def print_name(firstname, lastname):
+    print((firstname, lastname))
+a = input('Enter num Firstname: ')
+b = input('Enter Lastname: ')
+print(a, '', b)
+
+XIII
+def repeat_text(text, n):
+    for i in range(n):
+        print(text)
+a = input('Enter text: ')
+repeat_text(a, 10)
+
+XIV
+def sum_nums (a, b, c, d, e, f):
+    return a + b + c + d + e + f
+a = int(input('Enter num 1: '))
+b = int(input('Enter num 2: '))
+c = int(input('Enter num 3: '))
+d = int(input('Enter num 4: '))
+e = int(input('Enter num 5: '))
+f = int(input('Enter num 6: '))
+p = sum_nums (a, b, c, d, e, f)
+print (p)
+
+XV
+include math
+def avg_nums(uktc):
+    sum = 0
+    for n in uktc:
+        sum = sum + n
+    avg = sum / len (uktc)
+    return sum
+ocenki = [5, 5, 4, 2, 6, 3]
+gp4eProg = [2, 3, 2, 2, 2]
+gp4e = avg_nums(gp4eProg)
+d = avg_nums(ocenki)
+print (d)
+v = avg_nums(gp4eProg)
+print (v)
