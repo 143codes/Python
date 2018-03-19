@@ -165,9 +165,10 @@ d = avg_nums(grades)
 print ('Средно аритметично: ', d)
 
 IX
-robo: {"Pesho", 'Stavri', 'Nicol', 'Kalinka', 'Asen'}
-music: ('Stefka', 'Stavri', 'Vasko', 'Kleopatra', 'Asen', 'Milen')
-print cmp(robo, music)
+robo = ["Pesho", 'Stavri', 'Nicol', 'Kalinka', 'Asen']
+music = ['Stefka', 'Stavri', 'Vasko', 'Kleopatra', 'Asen', 'Milen']
+mergedlist = [robo + music]
+print (mergedlist)
 
 X
 tel = {"Pesho": "1234", "Vera": "4567", "Misho":"24364"}
