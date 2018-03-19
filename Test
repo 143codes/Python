@@ -145,20 +145,22 @@ print ("------------------------")
 print ("------------------------")
 
 VIII
+import math
 def avg_nums(grades):
     sum = 0
+
     for n in grades:
         sum = sum + n
     avg = sum / len (grades)
-    return sum
-grades = [6, 5.5, 3 ,5, 6, 4.2, 4]
-grades[2] = 4.5;
+    return avg
+grades = [6, 5.5, 3, 5, 6, 4.2, 4]
+grades[2] = 4.5
 grades.insert(7, 4)
 print ('Оценки: ', grades)
 grades.sort()
 print ('Във възходящ ред: ', grades)
 grades.reverse()
-print ('В низходящт ред: ', grades)
+print ('В низходящ ред: ', grades)
 d = avg_nums(grades)
 print ('Средно аритметично: ', d)
 
@@ -213,13 +215,13 @@ p = sum_nums (a, b, c, d, e, f)
 print (p)
 
 XV
-include math
+import math
 def avg_nums(uktc):
     sum = 0
     for n in uktc:
         sum = sum + n
     avg = sum / len (uktc)
-    return sum
+    return avg
 ocenki = [5, 5, 4, 2, 6, 3]
 gp4eProg = [2, 3, 2, 2, 2]
 gp4e = avg_nums(gp4eProg)
